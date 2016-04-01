@@ -32,3 +32,6 @@ eureka:
     serviceUrl:
       defaultZone: http://eureka.olymtech.com:8761/eureka/
 
+logging:
+  config: classpath:logbak.xml
+  path:   ${HOME}/log
