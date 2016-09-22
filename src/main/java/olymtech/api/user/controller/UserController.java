@@ -23,7 +23,7 @@ public class UserController {
 
     @RequestMapping(method = RequestMethod.POST)
     public User save(@RequestBody User user){
-        user.setUsername(user.getUsername()+"/api-user"+ LocalDateTime.now());
+        user.setUsername(user.getUsername()+"/api-user-demo"+ LocalDateTime.now());
         return userRepository.save(user);
     }
 
